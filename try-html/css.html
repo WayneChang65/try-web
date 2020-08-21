@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> </meta>
+        <title>CSS Study-開始</title>
+        <style type="text/css">
+        .title{font-weight: bold;font-size: 20px;}
+        .content{width: 400px;margin-top: 10px;margin-bottom: 10px;
+                    border:1px dashed salmon;padding: 10px}
+        .keyword{color: red;}
+        .box{
+                position: absolute; right:0px; top: 0px;
+                width: 100px;height: 50px;background-color: yellow;
+            }
+        .upper{position: relative;top: -8px;}
+        </style>
+    </head>
+    <body>
+        <div class="title">今天天氣很好<span class="upper">1</span>。</div>
+        <div class="content">
+            這是段落一內容。這是段落<span class="keyword">內容</span>。這是段落內容。<br/>
+            這是第二行。
+        </div>
+
+        <div class="box">Here is a box</div>
+
+        <div class="title">今天天氣很好<span class="upper">2</span>。</div>
+        <div class="content">
+            這是段落二之一內容。這是段落<span class="keyword">內容</span>。這是段落內容。<br/>
+            這是<span class="keyword">第二行</span>。
+        </div>
+        <div class="content">
+            這是段落二之二內容。這是段落<span class="keyword">內容</span>。這是段落內容。<br/>
+            這是<span class="keyword">第二行</span>。
+        </div>
+
+        <div style="font-weight: bold;font-size: 20px;">今天天氣很好<span class="upper">3</span>。</div>
+        <div style="width: 400px;margin-top: 10px;margin-bottom: 10px;
+                    border:1px dashed salmon;padding: 10px">
+            這是段落三內容。這是段落<span style="color: red;">內容</span>。這是段落內容。<br/>
+            這是第二行。
+        </div>
+    </body>
+</html>

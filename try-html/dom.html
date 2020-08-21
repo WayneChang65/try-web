@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <title>DOM</title>
+    <script type="text/javascript">
+        //alert(window.screen.width + ' x ' + window.screen.height);
+        function changeButtonText(txt) {
+            window.document.body.innerHTML = txt + '. I got it !';
+        }
+
+        function changeEmotionText() {
+            let emotionObj = window.document.getElementById('emotion');
+            emotionObj.innerHTML = '駄目な';
+            emotionObj.style.color = 'red';
+            emotionObj.style.fontWeight = 'bold';
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        今は<span id="emotion">いい</span>天氣だ。一緖に散歩しましようか。
+    </div>
+    <button onclick="changeButtonText('Wayne');">Click me 1</button>
+    <button onclick="changeEmotionText();">Click me 2</button>
+</body>
+
+</html>
